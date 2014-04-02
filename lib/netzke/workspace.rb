@@ -1,4 +1,5 @@
 require "netzke/workspace/version"
+require "netzke/workspace/base"
 
 module Netzke
   module Workspace

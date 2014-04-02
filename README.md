@@ -1,6 +1,12 @@
 # Netzke::Workspace
 
-TODO: Write a gem description
+Provides a tab-panel-based Netzke component that:
+
+  * allows dynamic loading of arbitrary Netzke components in (new or currently active tab)
+
+  * handles persistence of open tabs
+
+  * provides a method that unloads all tabs at once
 
 ## Installation
 
@@ -18,7 +24,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Inherit your workspace component from Netzke::Workspace::TabPanel. Then on the client side call the `loadTab` method to dynamically load components, e.g. (the `HelloWorld` component is supposed to be defined elsewhere):
+
+    class MyTabPanel < Netzke::Workspace::TabPanel
+      action :load_component
+
+      js_configure do |c|
+        c.on_load_component = <<-JS
+          function() {
+            this.loadTab("HelloWorld", newTab: true});
+          }
+        JS
+      end
+
+      def configure(c)
+        super
+        c.bbar = [:load_component]
+      end
+    end
+
+See `spec/rails_app/app/components` for more examples.
 
 ## Contributing
 
