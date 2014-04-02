@@ -45,6 +45,10 @@ Inherit your workspace component from Netzke::Workspace::TabPanel. Then on the c
 
 See `spec/rails_app/app/components` for more examples.
 
+## Running tests
+
+    $ rspec spec
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/netzke-workspace/fork )
