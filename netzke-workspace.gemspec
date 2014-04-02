@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Max Gorin"]
   spec.email         = ["gorinme@gmail.com"]
   spec.summary       = %q{Netzke Workspace component}
-  spec.description   = %q{Dynamically loads components in tabs}
+  spec.description   = %q{Dynamically loads components in persisted tabs}
   spec.homepage      = "http://netzke.org"
   spec.license       = "MIT"
 
