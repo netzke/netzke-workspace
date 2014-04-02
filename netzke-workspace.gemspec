@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'netzke-core', '0.10.0.rc2'
+  spec.add_dependency 'netzke-core', '0.10.0'
 
   spec.add_development_dependency 'rails', '~> 4.0.0'
   spec.add_development_dependency 'sqlite3'
