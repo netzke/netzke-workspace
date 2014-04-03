@@ -1,6 +1,6 @@
 describe 'SomeTabPanel component', ->
   it 'loads component in new tab', (done) ->
-    click button "New tab"
+    click button "Current tab"
     wait ->
       expectToSee tab "User 1"
       click button "Ping server"
